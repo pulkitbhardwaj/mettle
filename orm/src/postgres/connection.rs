@@ -1,4 +1,4 @@
-use crate::common::Connection;
+use crate::database::Connection;
 
 pub struct PGConnection {}
 

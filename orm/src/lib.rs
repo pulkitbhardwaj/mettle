@@ -1,6 +1,4 @@
-mod common;
+mod database;
 
 #[cfg(feature = "postgres")]
 pub mod postgres;
-
-pub use common::*;
