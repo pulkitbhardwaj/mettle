@@ -1,10 +1,9 @@
 [workspace]
 
 members = [
-  "core",
   "graphql",
+  "macros",
   "mettle",
   "orm",
-  "postgres",
-  "mysql",
+  "sql",
 ]
