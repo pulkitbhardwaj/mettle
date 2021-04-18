@@ -12,3 +12,4 @@ mysql = []
 mongo = []
 
 [dependencies]
+tokio-postgres = "0.7"

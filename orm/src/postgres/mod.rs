@@ -4,6 +4,10 @@ mod driver;
 pub use connection::*;
 pub use driver::*;
 
-pub fn connect(dsn: &str) -> impl Driver {
-    PGDriver {}
+use tokio_postgres::Error;
+
+use crate::database::Driver;
+
+pub async fn connect(config: &str) -> Result<impl Driver, Error> {
+    PGDriver::new(config).await
 }
